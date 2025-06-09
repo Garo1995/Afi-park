@@ -456,7 +456,7 @@ a[href^="tel"] {
     bottom: 0;
     right: 0;
     z-index: 99;
-    height: 89%;
+    height: 100%;
 }
 .first-business-name-mob{
     margin-left: 8px;

@@ -114,10 +114,10 @@
 
 .close{
     position: absolute;
-    top: 72px;
-    right: 90px;
-    width: 36px;
-    height: 36px;
+    top: 52px;
+    right: 60px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     transform: rotate(-45deg);
     z-index: 99;
@@ -128,7 +128,7 @@
 .close:after{
     content: "";
     position: absolute;
-    background-color: #ffffff;
+    background-color: #FFFFFF80;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -139,12 +139,12 @@
 }
 
 .close:before{
-    width: 36px;
+    width: 30px;
     height: 2px;
 }
 .close:after{
     width: 2px;
-    height: 36px;
+    height: 30px;
 }
 
 
@@ -322,7 +322,6 @@
         line-height: 125%;
         max-width: 400px;
         margin-top: 22px;
-        text-align: left;
     }
 
 
@@ -330,7 +329,6 @@
         padding: 15px 0;
         font-size: 24px;
         line-height: 26px;
-        text-align: left;
     }
     .clicking-submit {
         padding: 0;
