@@ -245,7 +245,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('g.buy-floor-one').on('mouseenter', function () {
+    $('.buy-floor-one').on('mouseenter', function () {
         const floor = $(this).data('number-floor');
         const square = $(this).data('count-square');
         const price = $(this).data('price');

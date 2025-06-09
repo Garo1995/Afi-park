@@ -478,6 +478,10 @@
 }
 .floor-plan-photo img{
     width: 100%;
+    transition: 0.5s;
+}
+.floor-plan-photo:hover img{
+    opacity: 0.7;
 }
 .floor-plan-photo svg{
     width: 100%;
@@ -919,9 +923,10 @@
     white-space: nowrap;
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 105%;
     transition: 0.3s;
+
 }
 
 .found-cnt-item{
@@ -1040,7 +1045,6 @@
 
     .found-cnt-info {
         margin-top: 25px;
-        padding: 0 26px 26px;
     }
     .found-cnt-info h3 {
         font-size: 22px;
@@ -1143,13 +1147,7 @@
         font-size: 25px;
         line-height: 105%;
     }
-    .floor-plan-title .premises-square-price span {
-        font-size: 30px;
-        line-height: 134%;
-    }
-    .price-floors {
-        width: 207px;
-    }
+
 }
 @media (max-width: 1599px){
     .select-floor-title h1 {
@@ -1192,7 +1190,29 @@
     .premises-square-count {
         gap: 16px;
     }
-
+    .on-sale-name p {
+        font-size: 14px;
+    }
+    .found-cnt-flex {
+        gap: 20px;
+    }
+    .found-cnt-box {
+        width: calc(25% - 15px);
+    }
+    .found-cnt-price span {
+        font-size: 18px;
+    }
+    .floor-plan-rel {
+        max-width: 590px;
+    }
+    .found-cnt-href {
+        padding: 12px 16px;
+        gap: 6px;
+        font-size: 12px;
+    }
+    .on-sale-name p {
+        font-size: 12px;
+    }
 }
 @media (max-width: 1438px){
     .premises-square-info {
@@ -1493,7 +1513,6 @@
     }
     .found-cnt-info {
         margin-top: 40px;
-        padding: 0 36px 33px;
     }
     .found-cnt-scroll {
         height: calc(100vh - 295px);

@@ -43,7 +43,7 @@ $('.menu a').on('click', function (e) {
     if ($target.length) {
         $('html, body').stop(true).animate({
             scrollTop: $target.offset().top - 0
-        }, 800);
+        }, 2000);
 
         // Обновим активный класс
         $('.menu li').removeClass('active-menu');
