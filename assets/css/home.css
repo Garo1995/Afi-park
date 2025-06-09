@@ -56,8 +56,14 @@ html {
 .tagilskaya-logo img{
     max-width: 764px;
     width: 100%;
+    filter: invert(1);
+    transition: 0.8s;
+    opacity: 0.6;
 }
-
+.tagilskaya-act .tagilskaya-logo img{
+    opacity: 1;
+    filter: unset;
+}
 
 
 
