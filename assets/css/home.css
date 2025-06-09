@@ -47,12 +47,9 @@ html {
 .home-main-active .tagilskaya-sec-img img{
     transform: scale(1);
 }
-
-
 .tagilskaya-cnt{
     height: 100vh;
 }
-
 .tagilskaya-logo img{
     max-width: 764px;
     width: 100%;
