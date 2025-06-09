@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'Noah';
+    src: url('Noah-Regular.eot');
+    src: local('Noah Regular'), local('Noah-Regular'),
+    url('Noah-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Noah-Regular.woff2') format('woff2'),
+    url('Noah-Regular.woff') format('woff'),
+    url('Noah-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Romul';
+    src: url('Romul.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
