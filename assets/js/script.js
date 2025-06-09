@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
         $(".home-page").addClass("home-main-active");
-        $("body").addClass("body-unset");
+        $("body").removeClass("no-scroll").addClass("body-unset");
 
         // Через 600 мс после появления контента — плавное появление хедера
         setTimeout(function () {
