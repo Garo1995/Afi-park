@@ -1490,7 +1490,7 @@
         margin-top: 18px;
     }
     .renowned-slider {
-        height: 448px;
+        height: 500px;
     }
 
     .great-option-info h2 {
@@ -1557,13 +1557,19 @@
         font-size: 24px;
         line-height: 36px;
     }
+    .world-renowned-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 
 }
 @media (max-width: 439px){
-    .world-renowned-info h1{
-        font-size: 50px;
+    .infrastructure-pic h4 {
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 2px;
     }
-
 
 }
 @media (max-width: 410px) {
@@ -1616,7 +1622,10 @@
     .block-contact-fl {
         gap: 32px;
     }
-
+    .entered-output strong {
+        font-size: 24px;
+        line-height: 28px;
+    }
 
     .entered-output p {
         font-size: 13px;
