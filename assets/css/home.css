@@ -293,6 +293,9 @@ h1{
     line-height: 26px;
     color: #FFFFFF;
 }
+.business-street h4 span{
+    display: block;
+}
 .rem-btn-mob .go-back-floor{
     display: none;
 }
@@ -439,6 +442,12 @@ a[href^="tel"] {
     text-align: left;
     white-space: nowrap;
 }
+
+.architecture-info strong small{
+    font-size: 24px;
+    line-height: 28px;
+}
+
 .architecture-info p{
     font-weight: 400;
     font-size: 18px;
