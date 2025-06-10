@@ -1570,13 +1570,6 @@
 </script>
 
 
-
-
-
-
-
-
-
 <script>
 
     gsap.registerPlugin(ScrollTrigger);
@@ -1589,20 +1582,29 @@
 
     const totalSlides = swiper.slides.length;
 
-    gsap.to({}, {
-        scrollTrigger: {
-            trigger: ".world-renowned",
-            start: "top top",
-            end: () => "+=" + (window.innerHeight * totalSlides),
-            scrub: 1,
-            pin: true,
-            onUpdate: self => {
-                const progress = self.progress;
-                const index = Math.round(progress * (totalSlides - 1));
-                swiper.slideTo(index);
+    const isMobile = window.matchMedia("(max-width: 575)").matches;
+
+    if (!isMobile) {
+        // Для десктопа — активируем ScrollTrigger с пином и синхронизацией swiper
+        gsap.to({}, {
+            scrollTrigger: {
+                trigger: ".world-renowned",
+                start: "top top",
+                end: () => "+=" + (window.innerHeight * totalSlides),
+                scrub: 1,
+                pin: true,
+                pinSpacing: true,
+                onUpdate: self => {
+                    const progress = self.progress;
+                    const index = Math.round(progress * (totalSlides - 1));
+                    swiper.slideTo(index);
+                }
             }
-        }
-    });
+        });
+    } else {
+        // Для мобильных — отключаем пин и scrub, оставляем обычный слайдер без синхронизации со скроллом
+        // (Если надо, можно добавить какую-то логику для мобильных здесь)
+    }
 </script>
 
 <script>
