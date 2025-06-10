@@ -1562,7 +1562,17 @@
         flex-direction: column;
         gap: 4px;
     }
+    .world-renowned-tit p {
+        line-height: 126%;
+        margin-top: 6px;
+    }
+    .world-renowned-photo {
+        height: 100%;
+    }
+    .entered-output {
+        height: 100%;
 
+    }
 }
 @media (max-width: 439px){
     .infrastructure-pic h4 {
@@ -1647,6 +1657,18 @@
     .first-business-name-mob {
         margin-top: 30px;
         padding: 16px 0 0 11px;
+    }
+
+
+    .world-renowned-tit {
+        padding: 0 8px;
+    }
+    .world-renowned-tit p {
+        line-height: 130%;
+        font-size: 11px;
+    }
+    .world-renowned-tit h4 {
+        font-size: 13px;
     }
 }
 
