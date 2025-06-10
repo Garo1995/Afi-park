@@ -451,7 +451,7 @@
 
                     <button class="open_modal btn" data-val="modal">Оставить заявку</button>
                     <button class="btn-line see-plan">Смотреть планировки
-                        <img src="./assets/img/plan.svg" class="icon-plan" alt="plan">
+                        <img src="./assets/img/plan.png" class="icon-plan" alt="plan">
                     </button>
 
                 </div>
@@ -951,8 +951,9 @@
         <div class="floor-plan floor-plan-param">
             <div class="container">
                 <div class="G-justify-end G-align-center">
-                    <div class="go-floor-style go-back-floor G-align-center"><i class="icon-arrow-rig-sm"></i> Вернуться
-                        назад
+                    <div class="go-floor-style go-back-floor G-align-center"><i class="icon-arrow-rig-sm"></i>
+
+                        <span>Вернуться назад</span>
                     </div>
                     <button class="btn-select open-found-sel G-center">Подбор по параметрам <i class="icon-tuning"></i>
                     </button>
@@ -1119,8 +1120,8 @@
             <div class="container">
                 <div class="">
                     <div class="filt-mob G-justify-end G-align-center">
-                        <div class="go-floor-style close-plan-floor G-align-center">
-                            <i class="icon-arrow-rig-sm"></i> Назад
+                        <div class="go-floor-style go-back-floor G-align-center">
+                            <i class="icon-arrow-rig-sm"></i> <span>Назад</span>
                         </div>
                         <button class="btn-select open-filter-main G-center">Все фильтры
                             <img src="./assets/img/tuning2.svg" alt="buildings"></button>
@@ -1204,7 +1205,7 @@
                         <h2>найдено <span>43</span></h2>
                         <div class="filt-desc G-justify-end G-align-center">
                             <div class="go-floor-style go-back-floor G-align-center"><i class="icon-arrow-rig-sm"></i>
-                                назад
+                                <span>назад</span>
                             </div>
                             <button class="btn-select close-plan-floor G-center">Выбор на плане этажа <img
                                     src="./assets/img/buildings.svg" alt="buildings"></button>
@@ -1440,7 +1441,8 @@
         <div class="floor-plan floor-premises-square">
             <div class="container">
                 <div class="lnop-naz G-justify-end G-align-center">
-                    <div class="go-floor-style go-back-found G-align-center"><i class="icon-arrow-rig-sm"></i> Вернуться назад
+                    <div class="go-floor-style go-back-found G-align-center"><i class="icon-arrow-rig-sm"></i>
+                        <span>Вернуться назад</span>
                     </div>
                     <button class="btn-select go-back-found G-center">Подбор по параметрам <i class="icon-tuning"></i>
                     </button>
@@ -1563,6 +1565,7 @@
         direction: "vertical",
         slidesPerView: 3,
         allowTouchMove: false, // отключаем мышь/тач
+
     });
 
     const totalSlides = swiper.slides.length;
@@ -1576,7 +1579,7 @@
             pin: true,
             onUpdate: self => {
                 const progress = self.progress;
-                const index = Math.round(progress * (totalSlides - 1));
+                const index = Math.round(progress * (totalSlides ));
                 swiper.slideTo(index);
             }
         }

@@ -883,6 +883,10 @@
 }
 .floor-plan-tit-mob h4{
     display: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 155%;
 }
 .btn-arr{
     display: none;
@@ -1058,10 +1062,7 @@
     .found-cnt-price {
         gap: 11px;
     }
-    .premises-square-count span {
-        font-size: 50px;
-        line-height: 50px;
-    }
+
     .premises-square-info {
         margin-top: 49px;
     }
@@ -1264,10 +1265,7 @@
         height: 60px;
         font-size: 15px;
     }
-    .premises-square-price span {
-        font-size: 28px;
-        line-height: 150%;
-    }
+
     .premises-square-flex {
         margin-top: 50px;
         flex-direction: column-reverse;
@@ -1632,6 +1630,10 @@
         padding-right: 15px;
         height: calc(100vh - 316px);
     }
+    .premises-square-count span {
+        font-size: 38px;
+        line-height: 38px;
+    }
 }
 
 @media (max-width: 575px){
@@ -1651,41 +1653,62 @@
         font-size: 36px;
     }
     .premises-square-count span {
-        font-size: 42px;
-        line-height: 42px;
+        font-size: 36px;
+        line-height: 38px;
     }
 
 
-
     .premises-square-count p {
-        font-size: 23px;
+        font-size: 16px;
     }
     .premises-square-count {
         gap: 13px;
     }
 
     .premises-square-count small {
-        font-size: 23px;
+        font-size: 16px;
     }
     .premises-square-info {
-        margin-top: 36px;
+        margin-top: 30px;
         gap: 12px;
+        justify-content: space-between;
+    }
+    .premises-square-info:before {
+        left: 43%;
     }
     .premises-square-info:before {
         top: 17px;
     }
     .premises-square-price p {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 106%;
     }
     .premises-square-price span {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 118%;
+    }
+    .btn-select {
+        padding: 13px 13px;
+        gap: 9px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .go-floor-style span{
+        display: none;
     }
     .premises-square-btn {
         margin-top: 44px;
         gap: 24px;
         flex-direction: column;
+    }
+    .on-sale-name p {
+        font-size: 11px;
+    }
+    .filt-mob {
+        margin-top: 0;
+    }
+    .sort-square-cnt ul {
+        gap: 25px;
     }
     .premises-square-btn .btn {
         max-width: 450px;
@@ -1762,28 +1785,19 @@
     }
 
 
-
-
-    .premises-square-count p {
-        font-size: 18px;
-    }
-
-    .premises-square-count small {
-        font-size: 18px;
-    }
     .premises-square-info {
         margin-top: 36px;
         gap: 12px;
     }
     .premises-square-info:before {
-        top: 17px;
+        top: 14px;
     }
     .premises-square-price p {
         font-size: 16px;
         line-height: 106%;
     }
     .premises-square-price span {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 118%;
     }
     .premises-square-btn {
@@ -1798,7 +1812,7 @@
         font-size: 18px;
     }
     .premises-square-count span {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 31px;
     }
 }

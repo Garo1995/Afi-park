@@ -830,20 +830,19 @@
     .first-business-name-mob h3{
         text-transform: unset;
     }
-    .parameters-btn{
-
+    .parameters-btn {
         transition: 0.3s;
         background: #C49D7699;
         backdrop-filter: blur(15px);
         border-radius: 500px;
-        gap: 45px;
-        padding: 5px 5px 5px 36px;
+        gap: 20px;
+        padding: 5px 5px 5px 25px;
         position: absolute;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 111;
-        max-width: 316px;
+        max-width: 270px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -851,8 +850,8 @@
     .parameters-btn span{
         color: #FFFFFF;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 26px;
         text-align: left;
     }
     .parameters-btn-fon{
@@ -1248,6 +1247,9 @@
         line-height: 22px;
         max-width: max-content;
     }
+    .architecture-info p br{
+        display: none;
+    }
     .gallery-slider{
         height: auto;
     }
@@ -1265,7 +1267,7 @@
     }
 
     .architecture-bulding {
-        height: 500px;
+        height: 400px;
         position: relative;
         margin-top: -10px;
     }
