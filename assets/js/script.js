@@ -27,7 +27,7 @@ $(document).ready(function () {
             $("header").addClass("header-show");
         }, 900);
 
-    }, 4000);
+    }, 3000);
 });
 
 
@@ -43,7 +43,7 @@ $('.menu a').on('click', function (e) {
     if ($target.length) {
         $('html, body').stop(true).animate({
             scrollTop: $target.offset().top - 0
-        }, 2000);
+        }, 800);
 
         // Обновим активный класс
         $('.menu li').removeClass('active-menu');

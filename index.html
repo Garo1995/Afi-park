@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/png" href="./favicon.png">
-    <script type="text/javascript" async
-            src="https://app.comagic.ru/static/cs.min.js?k=S0cfDpeyi0iIa7x9T36Y83nPg_QzC6ud"></script>
+    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js?k=S0cfDpeyi0iIa7x9T36Y83nPg_QzC6ud"></script>
 </head>
 <body class="no-scroll">
 <header id="mobileHeader" class="header">
@@ -136,7 +135,7 @@
                 </div>
                 <div class="business-street" style="background-image: url('./assets/img/bg-bis.png')">
                     <h4>Москва </h4>
-                    <h4>Ш. Старокалужске ?
+                    <h4>Ш. Старокалужске
                         <span>ул. Академика Челомея</span>
                     </h4>
                 </div>
@@ -191,14 +190,9 @@
                     </div>
                 </div>
                 <div class="architecture-item">
-                    <button class="parameters-btn ">
-                        <span>ПОДБОР ПО ПАРАМЕТРАМ</span>
-                        <span class="parameters-btn-fon G-center">
-                            <i class="icon-arrow-rig"></i>
-                        </span>
-                    </button>
                     <div class="architecture-bulding G-flex">
-                        <img src="./assets/img/bulding.png" alt="bulding">
+                        <img src="./assets/img/bulding.png" class="ture-bulding-desc" alt="bulding">
+                        <img src="./assets/img/bulding-mob.png" class="ture-bulding-mob" alt="bulding">
                     </div>
                 </div>
             </div>
@@ -433,9 +427,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="open-gallery gallery-mobile">
-            <h4>галерея бизнес центра</h4>
         </div>
     </div>
 
@@ -875,6 +866,7 @@
                 <img src="./assets/img/location.svg" alt="location">
             </div>
             <div class="map"></div>
+            <noscript><div><img src="https://mc.yandex.ru/watch/102558214" style="position:absolute; left:9px;" alt="" /></div></noscript>
 
 
         </div>
@@ -1557,33 +1549,72 @@
 
 <script src="assets/js/script.js"></script>
 
+
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(102558214, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+
+
+
+
+
+
+
+
+
 <script>
 
-    gsap.registerPlugin(ScrollTrigger);
+    if (window.innerWidth >= 575) {
+        // Настраиваем GSAP + ScrollTrigger только на десктопе
+        gsap.registerPlugin(ScrollTrigger);
 
-    const swiper = new Swiper(".renowned-slider", {
-        direction: "vertical",
-        slidesPerView: 3,
-        allowTouchMove: false, // отключаем мышь/тач
+        const swiper = new Swiper(".renowned-slider", {
+            direction: "vertical",
+            slidesPerView: 3,
+            allowTouchMove: false, // запрет тача
+        });
 
-    });
+        const totalSlides = swiper.slides.length;
 
-    const totalSlides = swiper.slides.length;
-
-    gsap.to({}, {
-        scrollTrigger: {
-            trigger: ".world-renowned",
-            start: "top top",
-            end: () => "+=" + (window.innerHeight * totalSlides),
-            scrub: 1,
-            pin: true,
-            onUpdate: self => {
-                const progress = self.progress;
-                const index = Math.round(progress * (totalSlides ));
-                swiper.slideTo(index);
+        gsap.to({}, {
+            scrollTrigger: {
+                trigger: ".world-renowned",
+                start: "top top",
+                end: () => "+=" + (window.innerHeight * totalSlides),
+                scrub: 1,
+                pin: true,
+                onUpdate: self => {
+                    const progress = self.progress;
+                    const index = Math.round(progress * (totalSlides));
+                    swiper.slideTo(index);
+                }
             }
-        }
-    });
+        });
+
+    } else {
+        // На мобилке отключаем scroll-прокрутку и включаем обычный свайп
+        const swiper = new Swiper(".renowned-slider", {
+            direction: "vertical",
+            slidesPerView: 3,
+            allowTouchMove: true, // разрешаем свайп
+        });
+    }
 </script>
 
 <script>
@@ -1616,6 +1647,7 @@
     $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
     $(".mask-phone").mask("+7 (h99) 999-99-99");
 </script>
+
 <script>
 
     $('#f_contact1').on('submit', function (e) {

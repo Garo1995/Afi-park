@@ -763,7 +763,7 @@
     }
 
     .business-street h4 {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .business-center-cnt {
@@ -817,9 +817,9 @@
 
 
     .great-option {
-        padding-top: 140px;
+        padding-top: 87px;
         height: 956px;
-        padding-bottom: 77px;
+        padding-bottom: 50px;
         background-position: center;
         background-image: url(../img/fon-mobvi.png)!important;
     }
@@ -874,7 +874,7 @@
         position: relative;
 
         width: 100%;
-        height: 450px;
+        height: 560px;
     }
     .great-option-info h2 {
         margin-top: 0;
@@ -885,27 +885,35 @@
     }
 
     .great-option-box:nth-child(1) {
-        left: 30px;
-        bottom: 0;
+        left: 0;
+        bottom: -25px;
+        max-width: 186px;
+        height: 186px;
     }
-
     .great-option-box:nth-child(2) {
-        right: 0;
+        left: 7px;
         top: 0;
+        max-width: 200px;
+        height: 200px;
     }
 
     .great-option-box:nth-child(3) {
-        right: 132px;
-        top: 148px;
-        max-width: 140px;
-        height: 140px;
+        right: initial;
+        top: 218px;
+        max-width: 160px;
+        height: 160px;
+        left: 85px;
+    }
+    .great-option-box:nth-child(3):before{
+        background: #FFFFFF80;
     }
 
     .great-option-box:nth-child(4) {
-        bottom: 0;
-        right: 0;
+        bottom: 61px;
+        left: 220px;
+        max-width: 176px;
+        height: 176px;
     }
-
 
     .great-option-info .metro-town {
         margin-top: 15px;
@@ -940,17 +948,15 @@
         color: #FFFFFF;
     }
     .great-option-cnt {
-        margin-top: 70px;
-        margin-bottom: 60px;
+        margin-top: 80px;
+        margin-bottom: 0;
+
     }
 
     .great-option-mob {
         height: 100vh;
     }
 
-    .block-new h1 {
-        font-size: 48px;
-    }
 
     .block-new-mobile {
         margin-top: 40px;
@@ -1068,10 +1074,9 @@
         display: none;
     }
     .block-contact-main .about-business p {
-        font-family: "Aeroport";
         font-weight: 500;
         font-size: 12px;
-        line-height: 128%;
+        line-height: 16px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -1212,10 +1217,12 @@
         max-width: 100%;
         margin: 0;
     }
-
+    .business-center {
+        background-image: url(../img/tagilskaya-fon-mob.png);
+    }
 
     .first-business {
-        padding-top: 391px;
+        padding-top: 561px;
         height: auto;
     }
     .first-business-info {
@@ -1237,11 +1244,13 @@
     }
 
     .architecture-info {
-        padding: 12px 0 12px 35px;
+        padding: 18px 30px 18px 30px;
         border-bottom: 1px solid #FFFFFF26;
         gap: 12px;
     }
-
+    .first-business-info {
+        gap: 12px;
+    }
     .architecture-info p {
         font-size: 14px;
         line-height: 22px;
@@ -1262,10 +1271,13 @@
         display: none;
     }
 
-    .architecture-info:nth-child(odd) {
+
+    .architecture-info:nth-child(even) {
         justify-content: flex-end;
     }
-
+    .architecture-info:first-child{
+        padding-right: 0;
+    }
     .architecture-bulding {
         height: 400px;
         position: relative;
@@ -1280,11 +1292,15 @@
         font-size: 18px;
         text-align: left;
     }
-
+    .business-center-mian {
+        gap: 8px;
+    }
     .great-option-mob {
         display: block;
     }
-
+    .business-center-info h3 {
+        font-size: 16px;
+    }
     .be-the-first-btn {
         gap: 36px;
         margin-top: 12px;
@@ -1333,10 +1349,7 @@
         align-items: flex-start;
     }
 
-    .great-option-cnt {
-        margin-top: 53px;
-        margin-bottom: 49px;
-    }
+
 
 
 
@@ -1468,6 +1481,9 @@
     .first-business-info h3 {
         font-size: 16px;
         line-height: 27px;
+        max-width: 389px;
+        width: 100%;
+        margin-top: 5px;
     }
 
     .great-option-box p {
@@ -1513,7 +1529,7 @@
         right: 15px;
     }
     .contact-map-href p {
-        max-width: 157px;
+        max-width: 175px;
     }
     .first-business-name-mob h3 {
         letter-spacing: 1px;
@@ -1525,17 +1541,24 @@
         background-image: url(../img/afiMobile.png) ;
     }
     .contact-map-href {
-        top: 34px;
-        left: 136px;
-    }
-    .contact-map-href-three {
+
+
         top: 141px;
         left: 175px;
         right: auto;
+        bottom: auto;
+    }
+    .contact-map-href-three {
+        top: auto;
+        bottom: 114px;
+        left: 40px;
+
     }
     .contact-map-href-two {
-        top: 252px;
+        top: 245px;
         left: 82px;
+        bottom: auto;
+
     }
     .img-desktop {
         display: none;
@@ -1546,9 +1569,15 @@
         top: 87px;
     }
     .contact-map-href-four {
-        top: auto;
-        bottom: 114px;
-        left: 40px;
+        top: 34px;
+        left: 136px;
+        bottom: auto;
+    }
+    .contact-map-href-two p {
+        max-width: 190px;
+    }
+    .contact-map-href-three p {
+        max-width: 290px;
     }
     .contact-map {
         height: 547px;
@@ -1556,6 +1585,7 @@
     .infrastructure-pic h4 {
         font-size: 24px;
         line-height: 36px;
+        letter-spacing: 2px;
     }
     .world-renowned-info {
         display: flex;
@@ -1566,6 +1596,13 @@
         line-height: 126%;
         margin-top: 6px;
     }
+    .infrastructure-pic {
+        max-width: 430px;
+        margin: 20px auto 0;
+    }
+    .business-center-mian {
+        padding-bottom: 50px;
+    }
     .world-renowned-photo {
         height: 100%;
     }
@@ -1573,6 +1610,61 @@
         height: 100%;
 
     }
+    .ture-bulding-mob{
+        display: block;
+    }
+    .ture-bulding-desc{
+        display: none;
+    }
+    .architecture-bulding {
+        margin-right: -16px;
+        height: 670px;
+        margin-top: -150px;
+    }
+    .be-the-first h1 {
+        max-width: 230px;
+        line-height: 136%;
+    }
+    .be-the-first h3 {
+        font-size: 16px;
+        line-height: 27px;
+        text-align: left;
+        max-width: 330px;
+        width: 100%;
+    }
+    .be-the-first {
+        gap: 12px;
+    }
+    .be-the-first-btn .btn-line {
+        height: 48px;
+        padding: 12px 10px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 284px;
+    }
+    .be-the-first-btn .btn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background: #C49D7659;
+        font-size: 16px;
+    }
+    .block-new-box img {
+        height: 260px;
+    }
+
+    .block-contact-main .about-business p {
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        max-width: 340px;
+    }
+
 }
 @media (max-width: 439px){
     .infrastructure-pic h4 {
@@ -1580,6 +1672,7 @@
         line-height: 32px;
         letter-spacing: 2px;
     }
+
 
 }
 @media (max-width: 410px) {
@@ -1670,8 +1763,21 @@
     .world-renowned-tit h4 {
         font-size: 13px;
     }
+    .great-option-box:nth-child(4) {
+        bottom: 50px;
+        left: 186px;
+        max-width: 162px;
+        height: 162px;
+    }
 }
-
+@media (max-width: 390px){
+    .contact-map-href-four {
+        left: 126px;
+    }
+    .great-option-box:nth-child(4) {
+        left: 180px;
+    }
+}
 @media (max-width: 360px) {
     h1 {
         font-size: 30px;

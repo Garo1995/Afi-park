@@ -53,7 +53,7 @@ html {
 .tagilskaya-logo img{
     max-width: 764px;
     width: 100%;
-    transition: 0.7s;
+    transition: 1.3s;
     opacity: 0;
 }
 .tagilskaya-act .tagilskaya-logo img{
@@ -270,7 +270,9 @@ h1{
     left: 108px;
 
 }
-
+.ture-bulding-mob{
+    display: none;
+}
 
 .business-street{
     background-size: cover;
@@ -281,7 +283,7 @@ h1{
     padding: 36px;
     display: flex;
     align-items: start;
-    gap: 16px;
+    gap: 12px;
     flex-direction: column;
     justify-content: end;
 }
@@ -340,6 +342,7 @@ h1{
 .about-business{
     padding: 24px 12px;
     background: #46515D66;
+    backdrop-filter: blur(15px);
     position: absolute;
     bottom: 0;
     left: 0;

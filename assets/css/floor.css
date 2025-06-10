@@ -475,6 +475,7 @@
     padding: 39px 44px;
     display: flex;
     cursor: pointer;
+    height: 624px;
 }
 .floor-plan-photo img{
     width: 100%;
@@ -999,7 +1000,13 @@
 
 @media (max-width: 1860px){
     .floor-plan-rel {
-        max-width: 644px;
+        max-width: 680px;
+    }
+    .floor-plan-photo {
+        height: 574px;
+    }
+    .on-sale-name p {
+        font-size: 16px;
     }
     .on-sale {
         gap: 25px;
@@ -1010,7 +1017,7 @@
         margin-top: 4px;
     }
     .floor-plan-flex {
-        max-width: 810px;
+        max-width: 870px;
         gap: 35px;
     }
     .floor-convenience {
@@ -1200,6 +1207,9 @@
     .found-cnt-box {
         width: calc(25% - 15px);
     }
+    .floor-plan-flex {
+        max-width: 760px;
+    }
     .found-cnt-price span {
         font-size: 18px;
     }
@@ -1213,6 +1223,9 @@
     }
     .on-sale-name p {
         font-size: 12px;
+    }
+    .floor-plan-photo {
+        height: 500px;
     }
 }
 @media (max-width: 1438px){
@@ -1249,10 +1262,7 @@
     .floor-plan-rel {
         max-width: 580px;
     }
-    .on-sale-name p {
-        font-size: 15px;
-        line-height: 130%;
-    }
+
     .premises-square h2, .found-title h2 {
         font-size: 42px;
     }
