@@ -263,6 +263,35 @@ $(document).ready(function () {
 
 
 
+const scrollContainer = document.querySelector('.world-renowned-scroll');
+
+scrollContainer.addEventListener('touchstart', function(e) {
+    this.startY = e.touches[0].clientY;
+    this.startScrollTop = this.scrollTop;
+});
+
+scrollContainer.addEventListener('touchmove', function(e) {
+    const currentY = e.touches[0].clientY;
+    const diffY = currentY - this.startY;
+
+    const isAtTop = this.scrollTop === 0;
+    const isAtBottom = this.scrollTop + this.clientHeight >= this.scrollHeight - 1; // с запасом
+
+    if ((isAtTop && diffY > 0) || (isAtBottom && diffY < 0)) {
+        // Если листаем вверх, но внутри блока уже вверху,
+        // или листаем вниз, но внутри блока уже внизу —
+        // отключаем прокрутку внутри, чтобы страница могла прокручиваться
+        e.preventDefault();
+    }
+});
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     let lastScrollTop = 0;
     const header = document.getElementById('mobileHeader');
