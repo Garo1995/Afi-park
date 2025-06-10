@@ -1677,6 +1677,7 @@
         overflow-y: scroll;
         display: block;
         padding-bottom: 25px;
+        touch-action: pan-y;
 
     }
     .world-renowned-scroll::-webkit-scrollbar {
