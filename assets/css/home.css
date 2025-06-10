@@ -1123,6 +1123,8 @@ a[href^="tel"] {
 }
 .icon-plan{
     display: none;
+    width: 24px;
+    height: 24px;
  }
 .all-block-mob{
     display: none;
