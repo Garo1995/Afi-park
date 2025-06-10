@@ -178,10 +178,10 @@ header.scrolled{
 }
 
 .body_fix {
-    overflow: hidden;
+    overflow: hidden!important;
 }
 .body_fix .home-page{
-    overflow: hidden;
+    overflow: hidden!important;
 }
 
 .mobile-logo {

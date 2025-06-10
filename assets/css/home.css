@@ -862,9 +862,6 @@ a[href^="tel"] {
     position: relative;
     width: 100%;
 }
-.world-renowned-scroll{
-    display: none;
-}
 .renowned-slider{
     height: 1024px;
 }

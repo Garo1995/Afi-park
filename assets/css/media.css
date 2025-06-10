@@ -1455,15 +1455,7 @@
     .world-renowned-photo {
         height: 148px;
     }
-    .entered-output{
-        height: 148px;
 
-    }
-    .world-renowned-fl {
-        max-width: 100%;
-        margin: 0;
-        height: auto;
-    }
     .renowned-arrow {
         display: none;
     }
@@ -1611,7 +1603,13 @@
     .business-center-mian {
         padding-bottom: 50px;
     }
+    .world-renowned-photo {
+        height: 100%;
+    }
+    .entered-output {
+        height: 100%;
 
+    }
     .ture-bulding-mob{
         display: block;
     }
@@ -1668,30 +1666,6 @@
     }
     .world-renowned{
         height: auto;
-    }
-    .world-renowned-rel{
-        display: none;
-    }
-    .world-renowned-scroll{
-        margin-top: 60px;
-        overflow-y: scroll;
-        display: block;
-        padding-bottom: 25px;
-        touch-action: pan-y;
-
-    }
-    .world-renowned-scroll::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-        background: unset;
-    }
-    .world-renowned-scroll::-webkit-scrollbar-thumb {
-        width: 0;
-        height: 0;
-        background: unset;
-    }
-    .world-renowned-mobile {
-        height: 480px;
     }
 
 }

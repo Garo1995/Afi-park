@@ -41,7 +41,7 @@
     position: relative;
 }
 .body-hidden{
-    overflow: hidden;
+    overflow: hidden!important;
 }
 .select-floor-photo{
     width: 100%;
@@ -789,7 +789,6 @@
     white-space: nowrap;
     user-select: none;
     color: #FFFFFF;
-    font-family: "Alethia Pro";
     font-weight: 400;
     font-size: 18px;
     z-index: 5;
@@ -914,6 +913,22 @@
     background: #FFFFFF33;
 
 }
+
+
+#price-thumb1,
+#area-thumb1,
+#price-thumb1{
+    margin-left: 5px;
+}
+#price-thumb2,
+#area-thumb2,
+#price-thumb2 {
+
+    margin-left: -5px;
+}
+
+
+
 .found-cnt-btn{
     margin-top: 24px;
     gap: 18px;
