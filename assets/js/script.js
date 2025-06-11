@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Показываем баннер, если не было принятия
     if (!localStorage.getItem("cookieAccepted")) {
-        cookieBlock.style.display = "block";
+        cookieBlock.style.display = "flex";
     } else {
         cookieBlock.style.display = "none";
     }
