@@ -1230,6 +1230,7 @@ a[href^="tel"] {
     position: fixed;
     left: 16px;
     bottom: 50px;
+    z-index: 111;
 }
 
 .cookie__text {
