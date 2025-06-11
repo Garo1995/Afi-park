@@ -1268,7 +1268,6 @@ a[href^="tel"] {
     justify-content: center;
     text-align: center;
     padding: 10px 14px;
-    border-radius: 999px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -1276,6 +1275,7 @@ a[href^="tel"] {
     width: 100%;
     background: #C49D76A6;
     border-radius: 9px;
+    transition: 0.3s;
 }
 .cookie__btn:hover{
     background: #C49D76;
