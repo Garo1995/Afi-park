@@ -258,7 +258,23 @@ $(document).ready(function () {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieBlock = document.querySelector(".cookie");
+    const acceptBtn = document.querySelector(".cookie__btn");
 
+    // Показываем баннер, если не было принятия
+    if (!localStorage.getItem("cookieAccepted")) {
+        cookieBlock.style.display = "block";
+    } else {
+        cookieBlock.style.display = "none";
+    }
+
+    // При нажатии — скрываем и сохраняем в localStorage
+    acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookieAccepted", "true");
+        cookieBlock.style.display = "none";
+    });
+});
 
 
 
