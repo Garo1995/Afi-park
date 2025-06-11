@@ -1277,7 +1277,10 @@ a[href^="tel"] {
     background: #C49D76A6;
     border-radius: 9px;
 }
+.cookie__btn:hover{
+    background: #C49D76;
 
+}
 @media (min-width: 768px) {
     .cookie {
         flex-direction: row;
