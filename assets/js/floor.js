@@ -136,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
             init: updateActiveNumber,
             slideChangeTransitionEnd: updateActiveNumber,
         },
+
     });
 
     function updateActiveNumber() {
